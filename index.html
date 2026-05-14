@@ -4,24 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>boilerplate</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: #111827;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h3{
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+            background-color: #1f2937;
+            border-bottom: 3px solid #3b82f6;
+            letter-spacing: 2px;
+        }
+
+        /* hero section */
+        .hero-container{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .stripe{
+            width: 80%;
+            height: 12px;
+            background: linear-gradient(
+                90deg,
+                #3b82f6,
+                #8b5cf6,
+                #ec4899
+            );
+            border-radius: 999px;
+        }
+
+        .hero{
+            background-color: #1f2937;
+            padding: 50px;
+            width: 80%;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            font-size: 28px;
+            transition: 0.3s;
+        }
+
+        .hero:hover{
+            transform: scale(1.02);
+            box-shadow: 0 0 30px rgba(59,130,246,0.5);
+        }
+
+        /* footer */
+        .footer{
+            background-color: #1f2937;
+            padding: 25px;
+            text-align: center;
+            border-top: 3px solid #3b82f6;
+        }
+
+        .footer div:first-child{
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer div:last-child{
+            color: #9ca3af;
+            font-style: italic;
+        }
+    </style>
 </head>
+
 <body>
+
     <h3>branchproject</h3>
-    
-    
+
     <!--hero section-->
-<div>
-    <div>színes csík</div>
-    <div>hero oldal</div>
-    <div>Színes csík</div>
-</div>
+    <div class="hero-container">
+        <div class="stripe"></div>
 
-
-        <!--footer section  -->
-        <div>
-            <div>merge project</div>
-            <div>ez az enyem genyo ne kopiz </div>
+        <div class="hero">
+            hero oldal
         </div>
+
+        <div class="stripe"></div>
+    </div>
+
+    <!--footer section-->
+    <div class="footer">
+        <div>merge project</div>
+        <div>ez az enyém genyó ne kopiz 😭</div>
+    </div>
 
 </body>
 </html>
